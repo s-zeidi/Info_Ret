@@ -56,3 +56,29 @@ We evaluated three transformer-based architectures using **SimpleTransformers**:
 
 The dataset can be accessed [here](https://zenodo.org/records/10564870).
 
+## 📦 Libraries Used
+
+The following Python libraries were used throughout this project:
+
+- `pandas` – For reading and processing tabular datasets.
+- `numpy` – For numerical operations and working with arrays.
+- `matplotlib.pyplot` – For generating evaluation plots like precision-recall curves.
+- `csv`, `json` – For handling dataset files and configurations.
+- `logging` – To control verbosity during training and evaluation.
+- `argparse` – To handle command-line arguments if the notebook is adapted to scripts.
+- `torch` – Core deep learning library used under the hood by Transformers.
+
+### NLP & Transformers
+- `transformers` – Hugging Face Transformers for using and fine-tuning RoBERTa models.
+  - Includes components like tokenizers, language models, and data collators.
+- `simpletransformers` – A high-level wrapper around Hugging Face Transformers for simplified training of multi-label classification models.
+
+### Evaluation
+- `sklearn.metrics` – For model evaluation, including:
+  - `f1_score`, `classification_report`, and `multilabel_confusion_matrix`
+  - `ConfusionMatrixDisplay` and `precision_recall_curve`
+
+### Google Colab Support
+- `google.colab` – Used to mount Google Drive when working in a Colab environment.
+
+
